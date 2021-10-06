@@ -19,5 +19,31 @@
 
         <h3>Incorporando videos ao site</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h3>Tag video</h3>
+        <p>Esse elemento é usado para incorporar conteúdo de vídeo em um documento HTML.</p>
+        <video poster="img/MOTOCROSS.jpg" controls>
+        <source src="img/FREESTYLE MOTOCROSS - 2020 [HD].mp4" type="video/mp4">
+        </video>
+
+        <h2>Tag de audio</h2>
+        <p>Esse elemento é é usado para adicionar conteúdo de som, um audio no caso, em um documento HTML. Ele foi adicionado como parte do HTML5</p>
+        <audio preload="metadata"controls>
+            <source src="audio/the-parade-hey-pluto-main-version-01-46-2546.mp3" type="audio/mp3">
+        </audio>
+
+        <h2>Tag Picture></h2>
+        <p>Esse elemento é usado para especificar múltiplos elementos source para um elemento específico img contido nele, assim o navegador vai escolher a imagem mais adequada de acordo com o layout atual da página, a habilidade do navegador de renderizar um certo tipo de imagem, se caso não houver correspondência entre os elementos source, o arquivo especificado pelo elemento img será selecionado e assim a imagem selecionada é então exibida no espaço ocupado pelo elemento img.</p>
+        <picture>
+            <source media="(max-width:500px)" srcset="img/motocross180.jpg">
+            <source media="(max-width:700px)" srcset="img/motocross320.jpg">
+            <source media="(max-width:100px)" srcset="img/motocross640.jpg">
+            <img src="img/motocrossfull.jpg" alt="Moto Cross">
+        </picture>
+
+
+
+
+
     </body>
 </html>
